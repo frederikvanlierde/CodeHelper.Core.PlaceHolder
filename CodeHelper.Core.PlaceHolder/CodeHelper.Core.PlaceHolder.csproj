@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>Replace the placeholders in a text with the values of the object</Description>
+    <Copyright>Free Use</Copyright>
+  </PropertyGroup>
+
+</Project>
