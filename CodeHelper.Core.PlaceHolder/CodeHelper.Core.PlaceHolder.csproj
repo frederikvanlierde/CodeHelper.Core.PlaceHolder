@@ -1,10 +1,37 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Description>Replace the placeholders in a text with the values of the object</Description>
-    <Copyright>Free Use</Copyright>
+    <Description>Replace placeholders in a text with the values of the given object</Description>
+    <Copyright>MIT License</Copyright>
+    <Authors>Frederik van Lierde</Authors>
+    <Company />
+    <PackageProjectUrl>https://github.com/frederikvanlierde/CodeHelper.Core.PlaceHolder</PackageProjectUrl>
+    <PackageIcon>CodeHelper-Logo.jpg</PackageIcon>
+    <ApplicationIcon>CodeHelper-Logo.ico</ApplicationIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/frederikvanlierde/CodeHelper.Core.PlaceHolder</RepositoryUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageVersion>1.1.0.0</PackageVersion>
+    <RepositoryType>gir</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="CodeHelper-Logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\CodeHelper-Logo.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="README.md" />
+    <None Include="LICENSE.txt" Pack="true" PackagePath="" />
+  </ItemGroup>
 
 </Project>

@@ -12,7 +12,7 @@ namespace CodeHelper.Core.PlaceHolder
         /// <param name="text">String: the text containing the placeholders</param>
         /// <param name="MyObject">object: the object containing the values to replace the placeholders</param>
         /// <returns>string: the original text with the placeholders replaced with the real values.</returns>
-        public static string Replace(string text, object MyObject)
+        public static string Replace(this string text, object MyObject)
         {
             if (MyObject != null)
             {
