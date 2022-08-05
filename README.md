@@ -22,23 +22,22 @@ NuGet Package: https://www.nuget.org/packages/CodeHelper.Core.PlaceHolder
 The value `{CONTACTNAME}` can be anything.  This value will be used in your text
 
 ### Code as Static Method
-```C#
+```
     using CodeHelper.Core.PlaceHolder;
 
     var _generalText = "{CONTACTNAME}, your account has been created with username {USERNAME}";
-    var _location as new Location() {ContactName = "Frederik", UserName= "FrederikvanLierde"};
-
+    var _location as new Location() {ContactName = "Frederik", UserName= "FrederikvanLierde"};    
     var updatedString = PlaceHolderHelper.Replace(_generalText, _location);
 ```
 
 ### Code as String Extension
-```C#
+```
     using CodeHelper.Core.PlaceHolder;
 
     var _generalText = "{CONTACTNAME}, your account has been created with username {USERNAME}";
     var _location as new Location() {ContactName = "Frederik", UserName= "FrederikvanLierde"};
 
-    var updatedString.Replace(_location);
+    var _location.Replace(_location);
 ```
 
 ## Question?
