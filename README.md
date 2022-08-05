@@ -1,6 +1,8 @@
 # CodeHelper.Core.PlaceHolder
 Replace the placeholders in a text with the values of the object
 
+NuGet Package: https://www.nuget.org/packages/CodeHelper.Core.PlaceHolder
+
 ## Use the plugin as follows:
 
 
@@ -19,7 +21,8 @@ Replace the placeholders in a text with the values of the object
 ```
 The value `{CONTACTNAME}` can be anything.  This value will be used in your text
 
-```Code as Static Method
+### Code as Static Method
+```C#
     using CodeHelper.Core.PlaceHolder;
 
     var _generalText = "{CONTACTNAME}, your account has been created with username {USERNAME}";
@@ -28,7 +31,8 @@ The value `{CONTACTNAME}` can be anything.  This value will be used in your text
     var updatedString = PlaceHolderHelper.Replace(_generalText, _location);
 ```
 
-```Code as String Extension
+### Code as String Extension
+```Code
     using CodeHelper.Core.PlaceHolder;
 
     var _generalText = "{CONTACTNAME}, your account has been created with username {USERNAME}";
@@ -38,4 +42,4 @@ The value `{CONTACTNAME}` can be anything.  This value will be used in your text
 ```
 
 ## Question?
-Frederik van Lierde <https://twitter.com/@frederik_vl/>
+Frederik van Lierde <https://twitter.com/@frederik_vl/> 
