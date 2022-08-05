@@ -26,7 +26,7 @@ The value `{CONTACTNAME}` can be anything.  This value will be used in your text
     using CodeHelper.Core.PlaceHolder;
 
     var _generalText = "{CONTACTNAME}, your account has been created with username {USERNAME}";
-    var _location as new Location() {ContactName = "Frederik", UserName= "FrederikvanLierde"};    
+    var _location = new Location() {ContactName = "Frederik", UserName= "FrederikvanLierde"};    
     var updatedString = PlaceHolderHelper.Replace(_generalText, _location);
 ```
 
@@ -35,7 +35,7 @@ The value `{CONTACTNAME}` can be anything.  This value will be used in your text
     using CodeHelper.Core.PlaceHolder;
 
     var _generalText = "{CONTACTNAME}, your account has been created with username {USERNAME}";
-    var _location as new Location() {ContactName = "Frederik", UserName= "FrederikvanLierde"};
+    var _location = new Location() {ContactName = "Frederik", UserName= "FrederikvanLierde"};
 
     var _location.Replace(_location);
 ```
