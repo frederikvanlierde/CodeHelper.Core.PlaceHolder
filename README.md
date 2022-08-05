@@ -32,7 +32,7 @@ The value `{CONTACTNAME}` can be anything.  This value will be used in your text
 ```
 
 ### Code as String Extension
-```C
+```C#
     using CodeHelper.Core.PlaceHolder;
 
     var _generalText = "{CONTACTNAME}, your account has been created with username {USERNAME}";
@@ -42,4 +42,4 @@ The value `{CONTACTNAME}` can be anything.  This value will be used in your text
 ```
 
 ## Question?
-Frederik van Lierde <https://twitter.com/@frederik_vl/>     
+Frederik van Lierde <https://twitter.com/@frederik_vl/>
