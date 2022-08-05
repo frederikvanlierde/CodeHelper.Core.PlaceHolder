@@ -6,25 +6,36 @@ Replace the placeholders in a text with the values of the object
 
 ```C# Class
     using CodeHelper.Core.PlaceHolder;
-
     public class Location
     {
         #region Properties
-        [Placeholder("{LOCATIONNAME}")]
-        public string LocationName { get; set; }
+        [Placeholder("{CONTACTNAME}")]
+        public string ContactName { get; set; }
+
+        [Placeholder("{USERNAME}")]
+        public string UserName { get; set; }
         #endregion
     }
 ```
-The value `{LOCATIONNAME}` can be anything.  This value will be used in your text
+The value `{CONTACTNAME}` can be anything.  This value will be used in your text
 
-```Code
+```Code as Static Method
     using CodeHelper.Core.PlaceHolder;
 
-    var _generalText = "{LOCATIONAME}, your account has been created";
-    var _location as new Location() {LocationName = "Frederik"};
-    var updatedString = PlaceHolderHelper.Replace(_generalText. _location);
+    var _generalText = "{CONTACTNAME}, your account has been created with username {USERNAME}";
+    var _location as new Location() {ContactName = "Frederik", UserName= "FrederikvanLierde"};
+
+    var updatedString = PlaceHolderHelper.Replace(_generalText, _location);
 ```
 
+```Code as String Extension
+    using CodeHelper.Core.PlaceHolder;
+
+    var _generalText = "{CONTACTNAME}, your account has been created with username {USERNAME}";
+    var _location as new Location() {ContactName = "Frederik", UserName= "FrederikvanLierde"};
+
+    var updatedString.Replace(_location);
+```
 
 ## Question?
 Frederik van Lierde <https://twitter.com/@frederik_vl/>
