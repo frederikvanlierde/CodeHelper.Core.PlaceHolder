@@ -1,5 +1,6 @@
 # CodeHelper.Core.PlaceHolder
 Replace the placeholders in a text with the values of the object
+See the Wiki for more specific examples
 
 NuGet Package: https://www.nuget.org/packages/CodeHelper.Core.PlaceHolder
 
